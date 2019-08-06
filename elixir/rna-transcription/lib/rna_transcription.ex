@@ -14,10 +14,10 @@ defmodule RnaTranscription do
 
   defp parse(nucleotide) do
     case nucleotide do
-      71 -> 67
-      67 -> 71
-      84 -> 65
-      65 -> 85
+      ?G -> ?C
+      ?C -> ?G
+      ?T -> ?A
+      ?A -> ?U
     end
   end
 end
